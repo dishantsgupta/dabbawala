@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: rgb(226, 226, 226);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    width: 90px;
+    background: #fff;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.incre{
+    width: 280px;
+}
+nav ul li .imgincre{
+    transition: 1s;
+    margin: 10px 0 0 60px;
+}
+nav ul li a .iconincre{
+    transition: 1s;
+    margin-left:  150px;
+}
+nav ul li a i{
+    transition: 1s;
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 -10px;
+    padding-bottom: 3rem;
+    transition: 1s;
+}
+
+.logo img {
+    height: 45px;
+    width: 80px;
+}
+
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+a {
+    position: relative;
+    width: 280px;
+    font-size: 18px;
+    color: rgb(85, 83, 83);
+    display: table;
+    padding: 10px;
+}
+
+nav .fas {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 0px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+.icon:hover {
+    background: #e2e2e2;
+    color: rgb(0, 0, 0);
+    border-radius: 30px 0 0 30px;
+}
+.container nav ul li .active{
+    background: #e2e2e2;
+    color: rgb(0, 0, 0);
+    border-radius: 30px 0 0 30px;
+}
+.icon:hover i,
+.icon:hover span {
+    color: rgb(0, 0, 0);
+}
+
+.nav-item {
+    position: relative;
+    top: 0px;
+    margin-left: 10px;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+}
+
+.container {
+    display: flex;
+}
+h1{
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+
+
+
+
+
+#search-form {
+    position: fixed;
+    top: -110%;
+    left: 0;
+    height: 15vh;
+    width: 100%;
+    z-index: 1004;
+    background: rgb(28, 27, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+#search-form.active {
+    top: 0;
+}
+#search-form #search-box {
+    width: 50rem;
+    border: 0.1rem solid #fff;
+    padding: 1rem 1rem;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: none;
+    background: none;
+}
+#search-form input:focus{
+    outline: none;
+    outline: 2px solid rgb(9,175,134);
+}
+#search-form #search-box::placeholder {
+    color: #fff;
+}
+#search-form #search-box::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+#search-form #close:hover {
+    color: rgb(236, 75, 75);
+}
+#search-form #close {
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    top: 2rem;
+    right: 3rem;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+.main {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+
+.main-top {
+    display: flex;
+    width: 100%;
+}
+
+.main-top i {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+}
+
+.main .users {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.users .card {
+    width: 98%;
+    min-height: 85vh;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.users .card i{
+    font-size: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.users .card h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.users .card form input{
+    width: 25%;
+    margin: 20px 0;
+    padding: 7px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.users .card form .btn{
+    width: 70px;
+    transition: 0.3s;
+}
+.users .card form .btn:hover{
+    width: 70px;
+    background-color: black;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.users .card p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.users table {
+    margin: auto;
+}
+
+.users .per span {
+    padding: 5px;
+    border-radius: 10px;
+    background: rgb(223, 223, 223);
+}
+
+.users td {
+    font-size: 14px;
+    padding-right: 15px;
+}
+
+.users .card button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #34AF60;
+}
+
+.users .card button:hover {
+    background: #34AF60;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+.attendance {
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.attendance-list {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.attendance .attendance-list .heading{
+    display: flex;
+    justify-content: space-between;
+}
+.attendance .attendance-list .heading i{
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 20px 0 20px;
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 100%;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+table thead tr {
+    color: #fff;
+    background-image: linear-gradient( 99deg,  rgba(115,18,81,1) 10.6%, rgba(28,28,28,1) 118% );
+    font-weight: bold;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(even) {
+    background: #fff;
+}
+.table tbody tr:nth-of-type(odd) {
+    background: #e2dfdf;
+}
+
+.table tbody tr.active {
+    font-weight: bold;
+    color: #34AF60;
+}

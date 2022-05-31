@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hubballi', cursive;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfd9d5;
+}
+.container{
+    max-width: 530px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: height 0.2s ease;
+}
+.container .forms{
+    display: flex;
+    align-items: center;
+}
+.container .form{
+    width: 100%;
+    border-radius: 10px;
+    max-height: 750px;
+    min-height: 400px;
+    padding: 30px;
+    background-color: rgb(15, 14, 14);
+    transition: margin-left 0.2s ease;
+}
+.container .form .title{
+    font-size: 32px;
+    position: relative;
+    font-weight: bold;
+}
+.form .logo-title{
+    display: flex;
+    justify-content: space-between;
+}
+.form .logo-title .title{
+    color: #ffffff;
+}
+.form .logo-title a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 100%;
+    color: black;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #f3965c;
+    padding: 9px;
+
+}
+.form .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+.form .input-field{
+    margin-top: 30px;
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(15, 14, 14);
+    color: #ffffff;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all ease-in-out 0.3s;
+}
+.input-field input:is(:focus ,:valid){
+    border-bottom-color: rgb(255, 255, 255);
+}
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all ease-in-out 0.3s;
+}
+.input-field input:is(:focus ,:valid) ~ i{
+    color: rgb(255, 250, 250);
+}
+.input-field i.showhide{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+.checkbox-content input{
+    accent-color: #4070f4;
+    margin: 0 8px -2px 4px;
+}
+.form .text{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+.form a.text{
+    color: #4070f4;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+.form .button{
+    margin-top: 35px;
+}
+.form .button input{
+    letter-spacing: 2px;
+    border: none;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 8px;
+    background-color: #f3965c;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+.button input:hover{
+    background-color: #ee8646;
+}
+.form .login-signup{
+    margin-top: 30px;
+}

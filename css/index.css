@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hubballi', cursive;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4dfdc;
+}
+.container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: height 0.2s ease;
+}
+.container .forms{
+    display: flex;
+    height: 480px;
+    align-items: center;
+    width: 200%;
+}
+.container.active .forms{
+    height: 720px;
+}
+.container .form{
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    transition: margin-left 0.2s ease;
+}
+.container.active .login{
+    margin-left: -50%;
+    transition: margin-left 0.2s ease, opacity 0.1s ease;
+    opacity: 0;
+}
+.container .signup{
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+.container.active .signup{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+.container .form .title{
+    font-size: 32px;
+    position: relative;
+    font-weight: bold;
+}
+.form .logo-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #ee8646;
+    border-radius: 25px;
+}
+.form .input-field{
+    margin-top: 30px;
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all ease-in-out 0.3s;
+}
+.input-field input:is(:focus ,:valid){
+    border-bottom-color: #000;
+}
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+}
+.input-field input:is(:focus ,:valid) ~ i{
+    color: #000;
+}
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.showhide{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+.checkbox-content input{
+    accent-color: #4070f4;
+    margin: 0 8px -2px 4px;
+}
+.form .text{
+    color: #333;
+    font-size: 18px;
+}
+.form a.text{
+    color: #4070f4;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+.form .button{
+    margin-top: 35px;
+}
+.form .button input{
+    letter-spacing: 2px;
+    border: none;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 8px;
+    background-color: #f3965c;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+.button input:hover{
+    background-color: #ee8646;
+}
+.form .login-signup{
+    margin-top: 30px;
+}
+#search-form {
+    position: fixed;
+    top: -110%;
+    left: 0;
+    height: 15vh;
+    width: 100%;
+    z-index: 1004;
+    background: rgb(28, 27, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+#search-form.active {
+    top: 0;
+}
+#search-form #search-box {
+    width: 50rem;
+    border: 0.1rem solid #fff;
+    padding: 1rem 1rem;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: none;
+    background: none;
+}
+#search-form input:focus{
+    outline: none;
+    outline: 2px solid rgb(9,175,134);
+}
+#search-form #search-box::placeholder {
+    color: #fff;
+}
+#search-form #search-box::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+#search-form #close:hover {
+    color: rgb(236, 75, 75);
+}
+#search-form #close {
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    top: 2rem;
+    right: 3rem;
+    font-size: 2rem;
+}
+.sendEmail{
+    border: none;
+    padding: 16px 50px;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background: rgb(28, 27, 27);
+    color: #fff;
+}

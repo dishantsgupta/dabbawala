@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all linear 0.2s;
+    font-family: 'Hubballi', cursive;
+}
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+:root{
+    --orange: #f57b2f;
+    --black: #000;
+    --light-color: #666;
+    --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.heading{
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+.order form{
+    max-width: 90rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    border: 0.1rem solid rgba(0,0,0,0.2);
+    background: #fff;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+.order form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.order form .inputBox .input{
+    width: 49%;
+}
+.order form .inputBox .input .genderRadio{
+    display: flex;
+    flex-direction: row;
+}
+.order form .inputBox .input .genderRadio .radioMale{
+    display: flex;
+}
+.order form .inputBox .input span{
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+.order form .inputBox .input input,.order form .inputBox .input textarea{
+    background: #eee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.drop-down .input select{
+    background: #eee;
+    width: 475px;
+    font-size: 16px;
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+}
+.order form .inputBox .input input:focus,.order form .inputBox .input textarea:focus{
+    border: 0.1rem solid var(--orange);
+}
+.order form .inputBox .input textarea{
+    height: 10rem;
+    resize: none;
+}
+.order form .inputBox .btn{
+    margin-top: 0;
+}
+.btn , .btnback{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.7rem 3rem;
+    border: 2px solid #000;
+}
+.btnback{
+    margin-left: 2rem;
+    padding: 0.7rem 1.2rem;
+}
+.btn:hover ,.btnback:hover{
+    background: greenyellow;
+    color: #000;
+    border: 2px solid #000;
+}
